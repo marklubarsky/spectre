@@ -11,5 +11,5 @@ RUN gem install bundler && bundle config build.nokogiri --use-system-libraries &
 
 ADD . /app
 
-EXPOSE 3000
-CMD ["rails", "server", "-b", "0.0.0.0"]
+EXPOSE 3040
+CMD ["rails", "server", "-b", "0.0.0.0", "-p", "3040"]
